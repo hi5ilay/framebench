@@ -21,3 +21,5 @@ ctest --test-dir build -C Release --output-on-failure
 The input is a single-column CSV with a `frame_ms` header and one positive, finite duration in milliseconds per row. LF and CRLF line endings are accepted. The tool reports sample count and nearest-rank p50, p95, and p99 frame times.
 
 For comparisons, use the same world copy, route, graphics settings, mod versions, Java runtime, and warm-up period. Record multiple runs per configuration and compare tail frame times along with the median. The included CSV is a test fixture.
+
+See the [benchmark protocol](docs/benchmark-protocol.md) for repeatable workloads and reporting.
